@@ -1,0 +1,5 @@
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Build\InterviewStringExercise.Data.dll
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Build\InterviewStringExercise.Data.pdb
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Code\InterviewStringExercise.Data\obj\Debug\InterviewStringExercise.Data.csprojResolveAssemblyReference.cache
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Code\InterviewStringExercise.Data\obj\Debug\InterviewStringExercise.Data.dll
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Code\InterviewStringExercise.Data\obj\Debug\InterviewStringExercise.Data.pdb

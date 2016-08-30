@@ -1,0 +1,18 @@
+﻿<Window x:Class="InterviewStringExercise.DesktopClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterviewStringExercise.DesktopClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="label" Content="String Exercise " HorizontalAlignment="Center"  Margin="193,10,211,0" VerticalAlignment="Top" Width="113" Height="32" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Input String" HorizontalAlignment="Left" Margin="22,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Output String" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="InputTextBox" Text="{Binding InputString, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" Margin="118,59,0,0"/>
+        <Label x:Name="OutputStringLabel" Content="{Binding OutputString, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Margin="118,106,0,0" VerticalAlignment="Top" Width="379" Height="26"/>
+        <Button x:Name="ConvertStringButton" Command ="{Binding ConvertStringCommand}"  Content="Convert String" HorizontalAlignment="Left" Margin="193,160,0,0" VerticalAlignment="Top" Width="113"/>
+
+    </Grid>
+</Window>

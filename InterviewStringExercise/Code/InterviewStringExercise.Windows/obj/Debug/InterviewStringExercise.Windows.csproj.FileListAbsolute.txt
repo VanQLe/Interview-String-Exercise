@@ -1,0 +1,10 @@
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\InterviewStringExercise.Windows\bin\Debug\InterviewStringExercise.Windows.dll
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\InterviewStringExercise.Windows\bin\Debug\InterviewStringExercise.Windows.pdb
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\InterviewStringExercise.Windows\obj\Debug\InterviewStringExercise.Windows.csprojResolveAssemblyReference.cache
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\InterviewStringExercise.Windows\obj\Debug\InterviewStringExercise.Windows.dll
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\InterviewStringExercise.Windows\obj\Debug\InterviewStringExercise.Windows.pdb
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Build\InterviewStringExercise.Windows.dll
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Build\InterviewStringExercise.Windows.pdb
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Code\InterviewStringExercise.Windows\obj\Debug\InterviewStringExercise.Windows.csprojResolveAssemblyReference.cache
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Code\InterviewStringExercise.Windows\obj\Debug\InterviewStringExercise.Windows.dll
+C:\Users\Van\Desktop\Interview String Exercise\InterviewStringExercise\Code\InterviewStringExercise.Windows\obj\Debug\InterviewStringExercise.Windows.pdb
