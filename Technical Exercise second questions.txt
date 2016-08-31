@@ -1,0 +1,44 @@
+HTML Code
+
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+</ul>
+<div id="clickedElements">
+</div>
+*******************************************************************************************
+JavaScript Code: My JavaScript knowledge is limited.  I thought the code was fine as it's.  Only changed the for loop into a foreach and made comments of my understanding of the code.
+
+Array.prototype.pushIfDoesntExist = function(item) {
+  if (this.indexOf(item) === -1) {
+    this.push(item);
+    return true;
+  }
+  return false;
+}
+
+var Testing = {
+        // var checkList : Array<T>
+        clickedList: [],
+        applyListeners: function() {
+          var self = this;
+          var nodes = document.getElementsByTagName('li');
+          // return nodes = [<li>one</li>, <li>two</>, <li>three</li>, <li>four</li>]
+            for (node of nodes ) {
+                //let i = 0, => this = <li>one</li> 
+                node.addEventListener('click', function() {
+                //we only want to display an item once
+                self.clickedList.pushIfDoesntExist(this.textContent)
+                self.displayData();
+                });
+      }
+    },
+  displayData: function() {
+    var textBox = document.getElementById('clickedElements');
+    textBox.textContent = this.clickedList.join(', ');
+  }
+}
+
+Testing.applyListeners();
