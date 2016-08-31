@@ -60,33 +60,45 @@ namespace InterviewStringExercise.DesktopClient.ViewModels
             }
         }
         /// <summary>
-        /// Split the input string into individual words by white spaces
+        /// Output with the words ordered based on maximum occurrence of any single character. 
         /// </summary>
         /// <param name="input"></param>
         private void ConvertString(string input)
         {
-          
-            List<Word> orderedList = new List<Word>();
-            char[] delimiaterChar = { ' ', '\t' };//determine a new word with any whitespace
-            string[] words = InputString.Split(delimiaterChar);//split the words and put into a list
+            OutputString = "";//Make OutputString empty;
+            List<Word> orderedList = new List<Word>();//List of words that's OrderBy Maximum reoccurences of a letter in a word
+            char[] delimiaterChar = { ' ', '\t','.'};//determine a new word with any whitespace
+            List<string> words = InputString.Split(delimiaterChar).ToList();//split the words and put into a list
 
             //determine the position of each words
             foreach (var word in words)
             {
                 Word newWord = new Word(word);
-                countCharReoccurences(newWord);
+                countCharReoccurences(newWord);//set the maximum reoccurence of a letter in a word
                 orderedList.Add(newWord);
             }
    
-            orderedList =  orderedList.OrderByDescending(o => o.reoccurences).ToList() ;//order the list by most ouccrences
+            orderedList =  orderedList.OrderByDescending(o => o.reoccurences).ToList() ;//order the list by most reouccrences value 
+            words.Clear();//clear the array 
             //output the new string
             foreach (var word in orderedList)
             {
-                OutputString += word.text + " ";
+                words.Add(word.text);
+                //OutputString += word.text + " ";
+            }
+            OutputString = String.Join(" ", words);//Convert the List<string> into the output string.
+
+            //Add period at end if there is was one.
+            if(InputString[InputString.Length-1] == '.')
+            {
+                OutputString += ".";
             }
             
         }
-
+        /// <summary>
+        /// Count the max number of reoccurences of a letter in a word
+        /// </summary>
+        /// <param name="word"></param>
         private void countCharReoccurences(Word word)
         {
             string text = word.text;
